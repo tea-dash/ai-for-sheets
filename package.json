@@ -6,7 +6,7 @@
     "dev": "vite",
     "dev:safe": "vite --force",
     "dev:hash": "VITE_ALLOW_SPECIAL_CHARS=true vite --force",
-    "build": "cp index.html dist/ && cp privacy.html dist/ && cp terms.html dist/ && cp -r public/* dist/",
+    "build": "tsc && vite build && cp privacy.html dist/ && cp terms.html dist/ && cp -r public/* dist/",
     "preview": "vite preview"
   },
   "dependencies": {
