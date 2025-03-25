@@ -1,19 +1,24 @@
 import * as React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import HomePage from './pages/HomePage'
+import PrivacyPage from './pages/PrivacyPage'
+import TermsPage from './pages/TermsPage'
+import Footer from './components/Footer'
 
-function App(): React.ReactElement {
+const App: React.FC = () => {
   return (
-    <div className="flex flex-col min-h-screen">
-      <header className="bg-primary text-white p-4">
-        <h1 className="text-2xl font-bold">AI for Sheets</h1>
-      </header>
-      <main className="flex-grow p-4">
-        <h2 className="text-xl mb-4">Welcome to AI for Sheets</h2>
-        <p>Transform your spreadsheets with the power of AI.</p>
-      </main>
-      <footer className="bg-dark text-white p-4 text-center">
-        <p>&copy; {new Date().getFullYear()} AI for Sheets</p>
-      </footer>
-    </div>
+    <Router>
+      <div className="flex flex-col min-h-screen">
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/privacy" element={<PrivacyPage />} />
+            <Route path="/terms" element={<TermsPage />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   )
 }
 

@@ -5,7 +5,7 @@ const HomePage: React.FC = () => {
     <div>
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-primary/10 to-secondary/10">
-        <div className="container">
+        <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2 space-y-6">
               <h1 className="text-4xl md:text-5xl font-bold text-dark">
@@ -15,10 +15,10 @@ const HomePage: React.FC = () => {
                 AI for Sheets brings the power of artificial intelligence to your spreadsheets. Automate tasks, get insights, and save time with our powerful AI tools.
               </p>
               <div className="flex gap-4 pt-4">
-                <a href="#" className="btn btn-primary">
+                <a href="#" className="inline-block px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition-colors">
                   Get Started
                 </a>
-                <a href="#features" className="btn border border-gray-300 text-gray-700 hover:bg-gray-50">
+                <a href="#features" className="inline-block px-6 py-3 border border-gray-300 text-gray-700 font-semibold rounded-lg hover:bg-gray-50 transition-colors">
                   Learn More
                 </a>
               </div>
@@ -36,7 +36,7 @@ const HomePage: React.FC = () => {
 
       {/* Features Section */}
       <section id="features" className="py-20">
-        <div className="container">
+        <div className="container mx-auto px-4">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h2 className="text-3xl font-bold mb-4">Powerful AI Features</h2>
             <p className="text-gray-600">
@@ -51,7 +51,7 @@ const HomePage: React.FC = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-3">Automated Data Entry</h3>
+              <h3 className="text-xl font-semibold mb-3">Automated Data Entry (Coming Soon)</h3>
               <p className="text-gray-600">
                 Let AI handle your data entry tasks. Extract data from documents, emails, and more with just a few clicks.
               </p>
@@ -145,12 +145,12 @@ const HomePage: React.FC = () => {
 
       {/* CTA Section */}
       <section className="py-20 bg-primary text-white">
-        <div className="container text-center">
+        <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to transform your spreadsheets?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Join thousands of users who are saving time and getting more insights with AI for Sheets.
           </p>
-          <a href="#" className="btn bg-white text-primary hover:bg-gray-100 px-8 py-3 text-lg">
+          <a href="#" className="inline-block px-8 py-3 bg-white text-primary font-semibold rounded-lg hover:bg-gray-100 transition-colors text-lg">
             Get Started for Free
           </a>
         </div>
