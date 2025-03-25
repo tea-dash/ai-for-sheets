@@ -1,6 +1,6 @@
-import React from 'react'
+import * as React from 'react'
 
-function App() {
+function App(): React.ReactElement {
   return (
     <div className="flex flex-col min-h-screen">
       <header className="bg-primary text-white p-4">

@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import * as React from 'react'
 import { Link } from 'react-router-dom'
 
-const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+const Navbar: React.FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false)
 
   return (
     <nav className="bg-white shadow-sm">

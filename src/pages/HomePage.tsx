@@ -1,7 +1,6 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import * as React from 'react'
 
-const HomePage = () => {
+const HomePage: React.FC = () => {
   return (
     <div>
       {/* Hero Section */}
