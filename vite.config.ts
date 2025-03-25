@@ -10,8 +10,8 @@ const __dirname = dirname(__filename);
 export default defineConfig({
   plugins: [react()],
   server: {
-    port: 3000,
-    strictPort: true,
+    port: 3001,
+    strictPort: false,
     host: true
   },
   build: {
