@@ -1,0 +1,43 @@
+.faq-grid {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border: 1px solid var(--gray-300);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.question {
+  padding: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background: white;
+}
+
+.question h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.toggle {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.answer {
+  padding: 0 1.25rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.faq-item.active .answer {
+  padding: 0 1.25rem 1.25rem;
+  max-height: 200px;
+} 
