@@ -20,6 +20,7 @@ const Footer = () => {
                 <li><Link to="/privacy-policy">Privacy Policy</Link></li>
                 <li><Link to="/terms-of-service">Terms of Service</Link></li>
                 <li><Link to="/support">Support</Link></li>
+                <li><Link to="/post-install-tips">Post Install Tips</Link></li>
               </ul>
             </div>
           </div>
@@ -31,6 +32,7 @@ const Footer = () => {
             <Link to="/privacy-policy">Privacy</Link>
             <Link to="/terms-of-service">Terms</Link>
             <Link to="/support">Support</Link>
+            <Link to="/post-install-tips">Tips</Link>
           </div>
         </div>
       </div>

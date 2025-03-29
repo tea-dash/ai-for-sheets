@@ -1,0 +1,407 @@
+.post-install-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f9f9fb;
+}
+
+.post-install-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+  flex: 1;
+}
+
+.post-install-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-top: 2rem;
+}
+
+.post-install-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.post-install-header p {
+  font-size: 1.2rem;
+  color: var(--color-text-secondary);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Quick Setup Section */
+.quick-setup {
+  background-color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.quick-setup h2 {
+  margin-bottom: 2rem;
+  color: var(--color-text-primary);
+  font-size: 1.8rem;
+}
+
+.progress-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.progress-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.step-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #f0f0f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+  color: #aaa;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.step-icon.active {
+  background-color: rgba(var(--color-primary-rgb), 0.1);
+  color: var(--color-primary);
+  box-shadow: 0 0 0 5px rgba(var(--color-primary-rgb), 0.1);
+}
+
+.step-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+
+.progress-line {
+  flex: 1;
+  height: 3px;
+  background-color: #f0f0f5;
+  position: relative;
+  z-index: 1;
+  max-width: 100px;
+}
+
+/* Tips Grid */
+.tips-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.tip-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tip-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.tip-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba(var(--color-primary-rgb), 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--color-primary);
+}
+
+.tip-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: var(--color-text-primary);
+}
+
+.tip-card p {
+  color: var(--color-text-secondary);
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.tip-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tip-steps li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f0f0f5;
+  position: relative;
+  padding-left: 1.5rem;
+  color: var(--color-text-primary);
+}
+
+.tip-steps li:last-child {
+  border-bottom: none;
+}
+
+.tip-steps li::before {
+  content: "•";
+  color: var(--color-primary);
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0;
+  top: 0.75rem;
+}
+
+/* Video Tutorial Section */
+.video-tutorial {
+  background-color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.video-tutorial h2 {
+  margin-bottom: 2rem;
+  color: var(--color-text-primary);
+  font-size: 1.8rem;
+}
+
+.video-container {
+  aspect-ratio: 16/9;
+  background-color: #f0f0f5;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.video-container:hover {
+  transform: scale(0.99);
+}
+
+.video-placeholder {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-secondary);
+}
+
+.video-placeholder i {
+  font-size: a3rem;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.video-description {
+  color: var(--color-text-secondary);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Common Questions Section */
+.common-questions {
+  background-color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.common-questions h2 {
+  margin-bottom: 2rem;
+  color: var(--color-text-primary);
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.faqs-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.faq-item {
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: #f9f9fb;
+  transition: transform 0.3s;
+}
+
+.faq-item:hover {
+  transform: translateY(-3px);
+}
+
+.faq-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+  color: var(--color-text-primary);
+}
+
+.faq-item p {
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+/* Next Steps Section */
+.next-steps {
+  margin-bottom: 3rem;
+}
+
+.next-steps h2 {
+  margin-bottom: 2rem;
+  color: var(--color-text-primary);
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.next-steps-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.next-step-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.next-step-card:hover {
+  transform: translateY(-5px);
+}
+
+.next-step-card i {
+  font-size: 2rem;
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  border-radius: 50%;
+  background-color: rgba(var(--color-primary-rgb), 0.1);
+}
+
+.next-step-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: var(--color-text-primary);
+}
+
+.next-step-card p {
+  color: var(--color-text-secondary);
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.btn-link {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: rgba(var(--color-primary-rgb), 0.1);
+  color: var(--color-primary);
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.btn-link:hover {
+  background-color: rgba(var(--color-primary-rgb), 0.2);
+}
+
+/* Navigation Buttons */
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.back-button,
+.support-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.back-button {
+  background-color: #f0f0f5;
+  color: var(--color-text-primary);
+}
+
+.back-button:hover {
+  background-color: #e0e0e5;
+}
+
+.support-button {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.support-button:hover {
+  background-color: var(--color-secondary);
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .post-install-header h1 {
+    font-size: 3rem;
+  }
+  
+  .tips-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .faqs-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .next-steps-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .post-install-header {
+    padding-top: 3rem;
+  }
+  
+  .tips-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+} 
