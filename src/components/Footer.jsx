@@ -19,6 +19,7 @@ const Footer = () => {
               <ul>
                 <li><Link to="/privacy-policy">Privacy Policy</Link></li>
                 <li><Link to="/terms-of-service">Terms of Service</Link></li>
+                <li><Link to="/support">Support</Link></li>
               </ul>
             </div>
           </div>
@@ -29,6 +30,7 @@ const Footer = () => {
           <div className="footer-bottom-links">
             <Link to="/privacy-policy">Privacy</Link>
             <Link to="/terms-of-service">Terms</Link>
+            <Link to="/support">Support</Link>
           </div>
         </div>
       </div>
