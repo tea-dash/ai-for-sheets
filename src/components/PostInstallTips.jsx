@@ -130,14 +130,17 @@ const PostInstallTips = () => {
         
         <section className="video-tutorial">
           <h2>Video Tutorial</h2>
-          <div className="video-container">
-            <div className="video-placeholder">
-              <i className="fas fa-play-circle"></i>
-              <p>Watch our getting started video</p>
-            </div>
+          <div className="responsive-video-container">
+            <iframe 
+              src="https://www.youtube.com/embed/TR6UiwKppb4" 
+              title="AI for Sheets Tutorial Video"
+              frameBorder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowFullScreen
+            ></iframe>
           </div>
           <p className="video-description">
-            This short video will walk you through the basic features and how to get the most out of AI for Sheets.
+            This video tutorial walks you through the essential features of AI for Sheets and shows you how to get the most out of your spreadsheet analysis.
           </p>
         </section>
         
