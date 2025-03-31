@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Canonical site
+Sitemap: https://speedvibe.app/sitemap.xml 

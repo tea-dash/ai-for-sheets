@@ -1,4 +1,32 @@
 {
+  "redirects": [
+    {
+      "source": "http://speedvibe.app/:path*",
+      "destination": "https://speedvibe.app/:path*",
+      "permanent": true
+    },
+    {
+      "source": "http://www.speedvibe.app/:path*",
+      "destination": "https://speedvibe.app/:path*",
+      "permanent": true
+    },
+    {
+      "source": "https://www.speedvibe.app/:path*",
+      "destination": "https://speedvibe.app/:path*",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://speedvibe.app>; rel=canonical"
+        }
+      ]
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",
