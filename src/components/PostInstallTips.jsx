@@ -5,57 +5,6 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 
 const PostInstallTips = () => {
-  const tips = [
-    {
-      id: 'start',
-      title: 'Getting Started',
-      description: 'Welcome to AI for Sheets! Follow these simple steps to get the most out of your new AI-powered spreadsheet assistant.',
-      steps: [
-        'Open your Google Sheets or Excel document',
-        'Click on the Extensions menu and select "AI for Sheets"',
-        'Sign in with the same account you used during registration',
-        'Grant the necessary permissions when prompted'
-      ],
-      icon: 'fa-rocket'
-    },
-    {
-      id: 'commands',
-      title: 'Essential Commands',
-      description: 'These commands will help you perform common tasks quickly:',
-      steps: [
-        '/analyze - Analyze your selected data',
-        '/visualize - Create a visualization from selected data',
-        '/formula - Generate a formula based on your description',
-        '/help - Get a list of all available commands'
-      ],
-      icon: 'fa-terminal'
-    },
-    {
-      id: 'data',
-      title: 'Data Preparation',
-      description: 'Follow these best practices to get the most accurate results:',
-      steps: [
-        'Use headers for your columns',
-        'Avoid merged cells when possible',
-        'Clean up empty rows and columns',
-        'Use consistent formatting for dates and numbers'
-      ],
-      icon: 'fa-table'
-    },
-    {
-      id: 'shortcuts',
-      title: 'Keyboard Shortcuts',
-      description: 'Save time with these keyboard shortcuts:',
-      steps: [
-        'Ctrl+Alt+A (Cmd+Option+A on Mac) - Analyze selection',
-        'Ctrl+Alt+V (Cmd+Option+V on Mac) - Visualize selection',
-        'Ctrl+Alt+F (Cmd+Option+F on Mac) - Generate formula',
-        'Ctrl+Alt+H (Cmd+Option+H on Mac) - Show help'
-      ],
-      icon: 'fa-keyboard'
-    }
-  ];
-
   const faqs = [
     {
       question: 'Why does AI for Sheets need permission to access my spreadsheets?',
@@ -85,54 +34,11 @@ const PostInstallTips = () => {
           <p>Get up and running quickly with these helpful tips and tricks</p>
         </div>
         
-        <section className="quick-setup">
-          <h2>Quick Setup Guide</h2>
-          <div className="progress-bar">
-            <div className="progress-step">
-              <div className="step-icon">
-                <i className="fas fa-download"></i>
-              </div>
-              <div className="step-label">Install</div>
-            </div>
-            <div className="progress-line"></div>
-            <div className="progress-step">
-              <div className="step-icon active">
-                <i className="fas fa-cog"></i>
-              </div>
-              <div className="step-label">Configure</div>
-            </div>
-            <div className="progress-line"></div>
-            <div className="progress-step">
-              <div className="step-icon">
-                <i className="fas fa-check"></i>
-              </div>
-              <div className="step-label">Complete</div>
-            </div>
-          </div>
-        </section>
-        
-        <div className="tips-grid">
-          {tips.map(tip => (
-            <div className="tip-card" key={tip.id}>
-              <div className="tip-icon">
-                <i className={`fas ${tip.icon}`}></i>
-              </div>
-              <h3>{tip.title}</h3>
-              <p>{tip.description}</p>
-              <ul className="tip-steps">
-                {tip.steps.map((step, index) => (
-                  <li key={index}>{step}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-        
         <section className="video-tutorial">
           <h2>Video Tutorial</h2>
           <div className="responsive-video-container">
             <iframe 
-              src="https://www.youtube.com/embed/TR6UiwKppb4" 
+              src="https://www.youtube.com/embed/4Fqvx6V5Yyg" 
               title="AI for Sheets Tutorial Video"
               frameBorder="0" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 

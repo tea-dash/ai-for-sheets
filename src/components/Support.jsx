@@ -70,7 +70,7 @@ const Support = () => {
       },
       { 
         id: 'ft-4', 
-        title: 'Coming Soon: Automation', 
+        title: 'Automation', 
         description: 'Preview of upcoming automation features.',
         url: '#automation'
       }

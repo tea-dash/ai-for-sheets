@@ -47,7 +47,6 @@ const Features = () => {
               </div>
               <h3>
                 {feature.title}
-                {feature.comingSoon && <span className="coming-soon-badge">Coming Soon</span>}
               </h3>
               <p>{feature.description}</p>
             </div>
