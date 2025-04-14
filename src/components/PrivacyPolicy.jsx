@@ -53,6 +53,9 @@ const PrivacyPolicy = () => {
               <li>Spreadsheet content for processing tasks</li>
               <li>Drive access to save and retrieve files</li>
             </ul>
+            <p>
+              We explicitly affirm that we do not use Google Workspace APIs to develop, improve, or train generalized AI and/or ML models. Any data accessed through Google Workspace APIs is used solely for the purpose of providing our application's core functionality and is not retained for AI/ML model development purposes.
+            </p>
           </section>
           
           <section>
