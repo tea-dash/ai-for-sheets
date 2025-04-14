@@ -11,7 +11,7 @@ const CTA = () => {
             Join thousands of professionals who are saving time and getting more insights from their data with AI for Sheets.
           </p>
           <div className="cta-buttons">
-            <a href="#" className="btn btn-primary">Get Started Free</a>
+            <a href="https://workspace.google.com/marketplace/app/ai_assistance_for_sheets/489083850967" className="btn btn-primary">Get Started Free</a>
             <Link to="/post-install-tips" className="btn btn-secondary">View Post-Install Tips</Link>
           </div>
         </div>

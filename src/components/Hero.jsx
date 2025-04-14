@@ -9,7 +9,7 @@ const Hero = () => {
           <h1>Transform Your Spreadsheets with AI</h1>
           <p>AI for Sheets brings the power of artificial intelligence to your spreadsheets. Automate tasks, analyze data, and gain insights faster than ever before.</p>
           <div className="hero-cta">
-            <a href="#" className="btn btn-primary btn-large">Try for Free</a>
+            <a href="https://workspace.google.com/marketplace/app/ai_assistance_for_sheets/489083850967" className="btn btn-primary btn-large">Try for Free</a>
             <a href="#" className="btn btn-secondary btn-large">Watch Demo</a>
           </div>
         </div>
