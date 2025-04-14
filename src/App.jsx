@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { Analytics } from '@vercel/analytics/react'
 import './App.css'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
@@ -44,6 +45,7 @@ function App() {
           </div>
         } />
       </Routes>
+      <Analytics />
     </Router>
   )
 }
